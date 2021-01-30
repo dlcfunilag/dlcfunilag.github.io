@@ -1024,8 +1024,8 @@ header .social-links ul li a:focus {
 	position: relative;
 }
 .main-content-tablecell {
-	display: table-cell;
-	vertical-align: middle;
+	position: fixed;
+    top: 25%;
 	z-index: 700;
 }
 .main-content-tablecell .row {
@@ -1161,84 +1161,231 @@ header .social-links ul li a:focus {
  * responsive:
  * home section 
  * ------------------------------------------------------------------- */
-@media only screen and (max-width:1200px) {
-	.main-content-tablecell #counter {
-		margin-bottom: 2.4rem;
-	}
-	.main-content-tablecell #counter span {
-		font-size: 11rem;
-	}
-}
-@media only screen and (max-width:1024px) {
-	.main-content-tablecell h1 {
-		font-size: 3.5rem;
-	}
-	.main-content-tablecell p {
-		font-size: 1.7rem;
-	}
-}
-@media only screen and (max-width:768px) {
-	.main-content-tablecell #counter {
-		margin-bottom: 1.2rem;
-	}
-	.main-content-tablecell #counter span {
-		font-size: 10.4rem;
-	}
-	.main-content-tablecell .row {
-		padding-bottom: 12rem;
-	}
-	.main-content-tablecell h1 {
-		font-size: 3.2rem;
-	}
-	.main-content-tablecell p {
-		font-size: 1.6rem;
-	}
-	.scroll-icon {
-		right: 45px;
-	}
-	.scroll-icon .scroll-text {
-		font-size: 1.4rem;
-	}
-}
-@media only screen and (max-width:600px) {
-	#home {
-		min-height: 700px;
-	}
-	.main-content-tablecell #counter {
-		margin-bottom: .9rem;
-	}
-	.main-content-tablecell #counter span {
-		font-size: 8.4rem;
-	}
-	.main-content-tablecell h1 {
-		font-size: 2.7rem;
-	}
-}
-@media only screen and (max-width:500px) {
-	.main-content-tablecell #counter span {
-		font-size: 6.2rem;
-	}
-}
-@media only screen and (max-width:400px) {
-	#home {
-		min-height: 600px;
-	}
-	.main-content-tablecell #counter {
-		margin-bottom: 1.5rem;
-	}
-	.main-content-tablecell #counter span {
-		font-size: 5rem;
-		margin-bottom: .9rem;
-	}
-	.main-content-tablecell #counter span sup {
-		font-size: .2em;
-		top: -2.8em;
-	}
-	.main-content-tablecell h1 {
-		font-size: 2.4rem;
-	}
+@media only screen and (orientation: portrait){
+    @media only screen and (max-width:1200px) {
+        .main-content-tablecell #counter {
+            margin-bottom: 2.4rem;
+        }
+        .main-content-tablecell #counter span {
+            font-size: 11rem;
+        }
+    }
+    @media only screen and (max-width:1024px) {
+        .main-content-tablecell h1 {
+            font-size: 3.5rem;
+        }
+        .main-content-tablecell p {
+            font-size: 1.7rem;
+        }
+    }
+    @media only screen and (max-width:768px) {
+        .main-content-tablecell #counter {
+            margin-bottom: 1.2rem;
+        }
+        .main-content-tablecell #counter span {
+            font-size: 10.4rem;
+        }
+        .main-content-tablecell .row {
+            padding-bottom: 12rem;
+        }
+        .main-content-tablecell h1 {
+            font-size: 3.2rem;
+        }
+        .main-content-tablecell p {
+            font-size: 1.6rem;
+        }
+        .scroll-icon {
+            right: 45px;
+        }
+        .scroll-icon .scroll-text {
+            font-size: 1.4rem;
+        }
+    }
+    @media only screen and (max-width:600px) {
+        #home {
+            min-height: 700px;
+        }
+        .main-content-tablecell #counter {
+            margin-bottom: .9rem;
+        }
+        .main-content-tablecell #counter span {
+            font-size: 7.4rem;
+        }
+        .main-content-tablecell h1 {
+            font-size: 2.7rem;
+        }
+    }
+    @media only screen and (max-width:500px) {
+        .main-content-tablecell #counter span {
+            font-size: 5.2rem;
+        }
+    }
+    @media only screen and (max-width:400px) {
+        #home {
+            min-height: 600px;
+        }
+        .main-content-tablecell #counter {
+            margin-bottom: 1.5rem;
+        }
+        .main-content-tablecell #counter span {
+            font-size: 4rem;
+            margin-bottom: .9rem;
+        }
+        .main-content-tablecell #counter span sup {
+            font-size: .2em;
+            top: -2.8em;
+        }
+        .main-content-tablecell h1 {
+            font-size: 2.4rem;
+        }
+    }
+    @media only screen and (max-width:300px) {
+        #home {
+            min-height: 600px;
+        }
+        .main-content-tablecell #counter {
+            margin-bottom: 1.5rem;
+        }
+        .main-content-tablecell #counter span {
+            font-size: 4rem;
+            margin-bottom: .9rem;
+        }
+        .main-content-tablecell #counter span sup {
+            font-size: .2em;
+            top: -2.8em;
+        }
+        .main-content-tablecell h1 {
+            font-size: 2.4rem;
+        }
+    }
 }
 
+@media only screen and (orientation: landscape){
+    @media only screen and (max-height:1200px) {
+        .main-content-tablecell #counter {
+            margin-bottom: 2.4rem;
+        }
+        .main-content-tablecell #counter span {
+            font-size: 11rem;
+        }
+    }
+    @media only screen and (max-height:1024px) {
+        .main-content-tablecell h1 {
+            font-size: 3.5rem;
+        }
+        .main-content-tablecell p {
+            font-size: 1.7rem;
+        }
+    }
+    @media only screen and (max-height:768px) {
+        .main-content-tablecell #counter {
+            margin-bottom: 1.2rem;
+        }
+        .main-content-tablecell #counter span {
+            font-size: 10.4rem;
+        }
+        .main-content-tablecell .row {
+            padding-bottom: 12rem;
+        }
+        .main-content-tablecell h1 {
+            font-size: 3.2rem;
+        }
+        .main-content-tablecell p {
+            font-size: 1.6rem;
+        }
+        .scroll-icon {
+            right: 45px;
+        }
+        .scroll-icon .scroll-text {
+            font-size: 1.4rem;
+        }
+    }
+    @media only screen and (max-height:600px) {
+        #home {
+            min-height: 700px;
+        }
+        .main-content-tablecell #counter {
+            margin-bottom: .9rem;
+        }
+        .main-content-tablecell #counter span {
+            font-size: 7.4rem;
+        }
+        .main-content-tablecell h1 {
+            font-size: 2.7rem;
+        }
+    }
+    @media only screen and (max-height:500px) {
+        .main-content-tablecell #counter span {
+            font-size: 6.2rem;
+        }
+    }
+    @media only screen and (max-height:400px) {
+        #home {
+            min-height: 600px;
+        }
+        .main-content-tablecell #counter {
+            margin-bottom: 1.5rem;
+        }
+        .main-content-tablecell #counter span {
+            font-size: 4rem;
+            margin-bottom: .9rem;
+        }
+        .main-content-tablecell #counter span sup {
+            font-size: .2em;
+            top: -2.8em;
+        }
+        .main-content-tablecell h1 {
+            font-size: 2.4rem;
+        }
+    }
+    @media only screen and (max-height:300px) {
+        #home {
+            min-height: 600px;
+        }
+        .main-content-tablecell #counter {
+            margin-bottom: 1.5rem;
+        }
+        .main-content-tablecell #counter span {
+            font-size: 4rem;
+            margin-bottom: .9rem;
+        }
+        .main-content-tablecell #counter span sup {
+            font-size: .2em;
+            top: -2.8em;
+        }
+        .main-content-tablecell h1 {
+            font-size: 2.4rem;
+        }
+    }
+}
+
+@media only screen and 
+(max-width:768px) and 
+(min-width: 600px) and 
+(max-height:768px) and 
+(min-height: 600px){
+    .main-content-tablecell #counter {
+        margin-bottom: 1.2rem;
+    }
+    .main-content-tablecell #counter span {
+        font-size: 7.4rem;
+    }
+    .main-content-tablecell .row {
+        padding-bottom: 12rem;
+    }
+    .main-content-tablecell h1 {
+        font-size: 3.2rem;
+    }
+    .main-content-tablecell p {
+        font-size: 1.6rem;
+    }
+    .scroll-icon {
+        right: 45px;
+    }
+    .scroll-icon .scroll-text {
+        font-size: 1.4rem;
+    }
+}
 
 /* ===================================================================
  * 10. info - (_layout.scss)
