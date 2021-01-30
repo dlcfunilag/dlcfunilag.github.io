@@ -1216,7 +1216,7 @@ header .social-links ul li a:focus {
 }
 @media only screen and (max-width:500px) {
 	.main-content-tablecell #counter span {
-		font-size: 7.2rem;
+		font-size: 6.2rem;
 	}
 }
 @media only screen and (max-width:400px) {
@@ -1227,7 +1227,7 @@ header .social-links ul li a:focus {
 		margin-bottom: 1.5rem;
 	}
 	.main-content-tablecell #counter span {
-		font-size: 6rem;
+		font-size: 5rem;
 		margin-bottom: .9rem;
 	}
 	.main-content-tablecell #counter span sup {
