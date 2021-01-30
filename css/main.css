@@ -645,7 +645,9 @@ input::-moz-focus-inner {
  * 07. other components - (_others.scss)
  *
  * ------------------------------------------------------------------- */
-
+#shoutout {
+    color: #333333;
+}
 /* ------------------------------------------------------------------- 
  * additional typo styles - (_additional-typo.scss)
  * ------------------------------------------------------------------- */
@@ -824,7 +826,7 @@ header .logo a {
 	border: none;
 	width: 97px;
 	height: 84px;
-	background: url("../images/logo.png") no-repeat center;
+	background: url("../images/favicon-96x96.png") no-repeat center;
 	background-size: 97px 84px;
 	font: 0/0 a;
 	text-shadow: none;
@@ -1022,7 +1024,7 @@ header .social-links ul li a:focus {
 }
 .main-content-tablecell {
 	display: table-cell;
-	vertical-align: bottom;
+	vertical-align: middle;
 	z-index: 700;
 }
 .main-content-tablecell .row {
@@ -1047,7 +1049,7 @@ header .social-links ul li a:focus {
 }
 .main-content-tablecell #counter span {
 	float: left;
-	text-align: right;
+	text-align: center;
 	color: #FFFFFF;
 	font-family: "roboto-black", sans-serif;
 	font-size: 12rem;
@@ -1067,8 +1069,8 @@ header .social-links ul li a:focus {
 	line-height: 1.143;
 	color: #FFFFFF;
 	margin-bottom: 1.2rem;
-	max-width: 600px;
-	position: relative;
+    position: relative;
+    text-align: center;
 }
 .main-content-tablecell p {
 	color: rgba(255, 255, 255, 0.3);
@@ -1698,6 +1700,14 @@ header .social-links ul li a:focus {
  * 12. footer - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
+.custom-footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
 footer {
 	text-align: center;
 	padding-bottom: 12rem;
